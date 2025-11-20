@@ -3,6 +3,7 @@
 // Declaração das variáveis
 let nomeHeroi = "Mário"
 let xp = 10001
+let nivel
 
 // Estrutura de decisão
 
@@ -15,35 +16,41 @@ let xp = 10001
 // Se XP for entre 9.001 e 10.000= Imortal
 // Se XP for maior ou igual a 10.001 = Radiante
 
+switch (true){
+    case (xp < 1000):
+        nivel = "Ferro"
+        break
+    case (xp >= 1001 && xp < 5000):
+        nivel = "Bronze"
+        break
 
-if (xp < 1000) {
-    console.log("Ferro")
+    case (xp >= 5001 && xp < 7000):
+        nivel = "Ouro"
+        break
 
-} else if (xp >= 1001 && xp < 2000) {
-    console.log("Broze")
+    case (xp >= 7001 && xp < 8000):
+        nivel = "Platina"
+        break
 
-} else if (xp >= 2001 && xp < 5000) {
-    console.log("Prata")
+    case (xp >= 8001 && xp < 9000):
+        nivel = "Ascendente"
+        break
 
-} else if (xp >= 5001 && xp < 7000) {
-    console.log("Ouro")
+    case (xp >= 9001 && xp < 10000):
+        nivel = "Imortal"
+        break
 
-} else if (xp >= 7001 && xp < 8000) {
-    console.log("Platina")
+    case (xp >= 10001 && xp < 12000):
+        nivel = "Radiante"
+        break
 
-} else if (xp >= 8001 && xp < 9000) {
-    console.log("Ascedente")
+    default:
+        nivel = "Campeão"
+        break
 
-} else if (xp >= 8001 && xp < 9000) {
-    console.log("Imortal")
-
-} else if (xp >= 10001 && 12000) {
-    console.log("Radiante")
-
-} else (xp)
-    console.log("Lendário")
-    
+}   
 
 // Mengaegem de saída informando o nivel e nome do herói
 
-console.log("O herói de nome " + nomeHeroi + " está no nível " + xp)
+console.log("O herói de nome " + nomeHeroi + " está no nível " + nivel)
+
